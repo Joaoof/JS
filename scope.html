@@ -1,0 +1,37 @@
+ <!-- <script>
+
+  {
+      let x= 0
+      console.log(x)
+  }
+  
+interessante notar que o "var" é elevado acima do bloco, considerando então o seu valor como algo indefinido.
+ex;
+
+var x
+
+console.log('>existe x antes do bloco?', x)
+
+{
+    x= 0
+}
+
+
+ </script> -->
+
+ <script>
+  // var é global e, também local.
+ 
+  console.log('>existe x antes do bloco', x)
+
+  {
+      var x= 0
+  }
+
+  console.log('> existe x depois do bloco? ', x)
+
+ </script>
+
+ <!--Tudo dentro do escopo é local e, tudo dentro do script é global-->
+
+ <!--let e const só funcionará dentro do escopo local, diferente do var pois ele é global-->
